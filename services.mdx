@@ -1,0 +1,147 @@
+---
+title: Services
+description: Detailed overview of Parker+Olive's service offerings
+---
+
+Parker+Olive provides a comprehensive range of services to support business growth across various domains. Their offerings are tailored to meet the specific needs of startups, small businesses, and nonprofits, ensuring scalable and sustainable solutions.
+
+<Columns cols={2}>
+  <Card title="AI Solutions" icon="cpu" href="#ai-solutions">
+    Automate processes and gain data-driven insights with advanced AI technologies.
+  </Card>
+  <Card title="Marketing Services" icon="megaphone" href="#marketing-services">
+    Create impactful marketing strategies that drive engagement and growth.
+  </Card>
+  <Card title="Software Development" icon="code" href="#software-dev">
+    Build custom software applications for web and mobile platforms.
+  </Card>
+  <Card title="Operations Consulting" icon="settings" href="#operations-consulting">
+    Optimize processes and improve operational efficiency.
+  </Card>
+</Columns>
+
+## AI Solutions
+
+Parker+Olive's AI services help businesses leverage machine learning and automation to solve complex problems. From predictive analytics to natural language processing, their AI solutions are designed to integrate seamlessly with existing systems.
+
+<Tabs>
+  <Tab title="Predictive Analytics" icon="trending-up">
+    Use data to forecast trends and make informed decisions.
+
+    <CodeGroup tabs="Python,R">
+      ```python
+      import pandas as pd
+from sklearn.linear_model import LinearRegression
+
+# Load data
+data = pd.read_csv('sales_data.csv')
+X = data[['month', 'marketing_spend']]
+y = data['revenue']
+
+# Train model
+model = LinearRegression()
+model.fit(X, y)
+
+# Predict
+predictions = model.predict([[13, 50000]])
+print(f"Predicted revenue: ${predictions[0]:.2f}")
+      ```
+      ```r
+      # R example for predictive modeling
+library(caret)
+
+# Load data
+data <- read.csv('sales_data.csv')
+
+# Train model
+model <- train(revenue ~ month + marketing_spend, data = data, method = "lm")
+
+# Predict
+new_data <- data.frame(month = 13, marketing_spend = 50000)
+prediction <- predict(model, new_data)
+print(paste("Predicted revenue: $", round(prediction, 2)))
+      ```
+    </CodeGroup>
+  </Tab>
+  <Tab title="Automation" icon="zap">
+    Streamline repetitive tasks with intelligent automation.
+
+    <Steps>
+      <Step title="Identify Tasks" icon="list">
+        Determine which processes are repetitive and time-consuming.
+      </Step>
+      <Step title="Design Automation" icon="cog">
+        Create workflows using tools like Zapier or custom scripts.
+      </Step>
+      <Step title="Test and Deploy" icon="play">
+        Ensure reliability before full implementation.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+<Callout kind="info">AI implementation requires careful data preparation and ethical considerations.</Callout>
+
+## Marketing Services
+
+Effective marketing is crucial for business growth. Parker+Olive develops strategies that combine digital marketing, content creation, and social media management to build brand awareness and drive conversions.
+
+<ExpandableGroup>
+  <Expandable title="Digital Marketing" default-open="true">
+    Leverage online channels including SEO, PPC advertising, and email campaigns to reach target audiences.
+  </Expandable>
+  <Expandable title="Content Strategy" default-open="false">
+    Create compelling content that educates, engages, and converts potential customers.
+  </Expandable>
+  <Expandable title="Social Media Management" default-open="false">
+    Build and maintain a strong presence on platforms like LinkedIn, Twitter, and Instagram.
+  </Expandable>
+</ExpandableGroup>
+
+## Software Development
+
+Parker+Olive builds robust software solutions using modern technologies and best practices. Their development process includes requirements gathering, design, implementation, testing, and deployment.
+
+```javascript
+// Example: React component for a dashboard
+function Dashboard() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch('/api/dashboard-data')
+      .then(response => response.json())
+      .then(setData);
+  }, []);
+
+  return (
+    <div className="dashboard">
+      {data.map(item => (
+        <div key={item.id}>{item.name}: {item.value}</div>
+      ))}
+    </div>
+  );
+}
+```
+
+<Callout kind="success">Their software solutions are built with scalability and security in mind.</Callout>
+
+## Operations Consulting
+
+Operations consulting focuses on improving efficiency and productivity. Parker+Olive consultants analyze workflows, identify bottlenecks, and implement process improvements.
+
+<Steps>
+  <Step title="Process Analysis" icon="search">
+    Map out current processes and identify inefficiencies.
+  </Step>
+  <Step title="Solution Design" icon="lightbulb">
+    Develop optimized workflows and resource allocation strategies.
+  </Step>
+  <Step title="Implementation" icon="settings">
+    Roll out changes with proper training and monitoring.
+  </Step>
+  <Step title="Evaluation" icon="bar-chart">
+    Measure improvements and adjust as needed.
+  </Step>
+</Steps>
+
+Parker+Olive's multidisciplinary approach ensures that all services are integrated for maximum impact. Whether you're looking to automate operations, enhance marketing efforts, or build custom software, they provide the expertise to help you achieve your growth objectives.

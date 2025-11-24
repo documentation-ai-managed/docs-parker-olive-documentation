@@ -1,0 +1,85 @@
+{
+  "name": "Parker+Olive Documentation",
+  "initialRoute": "introduction",
+  "colors": {
+    "light": {
+      "brand": "#84847f",
+      "heading": "#1a1a1a",
+      "text": "#374151"
+    },
+    "dark": {
+      "brand": "#a0a09a",
+      "heading": "#f2f2f2",
+      "text": "#c1c1c1"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "icon": "book",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "icon": "rocket",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "introduction",
+                "icon": "star"
+              }
+            ]
+          },
+          {
+            "group": "Services",
+            "icon": "settings",
+            "pages": [
+              {
+                "title": "Services",
+                "path": "services",
+                "icon": "tool"
+              }
+            ]
+          },
+          {
+            "group": "About",
+            "icon": "users",
+            "pages": [
+              {
+                "title": "Case Studies",
+                "path": "case-studies",
+                "icon": "file-text"
+              },
+              {
+                "title": "Team",
+                "path": "team",
+                "icon": "user"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "icon": "code",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "openapi": "openapi.yaml"
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "icon": "clock",
+        "pages": [
+          {
+            "title": "Release History",
+            "path": "changelog",
+            "icon": "history"
+          }
+        ]
+      }
+    ]
+  }
+}

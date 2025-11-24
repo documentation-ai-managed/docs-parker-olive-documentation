@@ -1,0 +1,147 @@
+---
+title: Case Studies
+description: Real-world examples of Parker+Olive's successful projects
+---
+
+Parker+Olive has helped numerous clients overcome growth challenges through innovative solutions. These case studies demonstrate how their services translate into tangible results across different industries and business sizes.
+
+<Columns cols={2}>
+  <Card title="Startup Scale-Up" icon="rocket" href="#startup-case">
+    How a tech startup tripled its user base in six months.
+  </Card>
+  <Card title="Nonprofit Expansion" icon="users" href="#nonprofit-case">
+    Supporting a nonprofit's growth through digital transformation.
+  </Card>
+  <Card title="SMB Digital Transformation" icon="refresh-cw" href="#smb-case">
+    Streamlining operations for a small business.
+  </Card>
+  <Card title="E-commerce Optimization" icon="shopping-cart" href="#ecommerce-case">
+    Boosting online sales through targeted marketing.
+  </Card>
+</Columns>
+
+## Startup Scale-Up Case Study
+
+A New York-based SaaS startup struggled with user acquisition and retention. Parker+Olive implemented a comprehensive growth strategy that included AI-powered personalization and targeted marketing campaigns.
+
+<Tabs>
+  <Tab title="Challenge" icon="alert-triangle">
+    The startup faced low conversion rates and high churn, limiting their growth potential.
+  </Tab>
+  <Tab title="Solution" icon="lightbulb">
+    Parker+Olive developed a data-driven approach using machine learning for user segmentation and personalized recommendations.
+  </Tab>
+  <Tab title="Results" icon="trending-up">
+    User base tripled, conversion rates improved by 40%, and churn reduced by 25%.
+  </Tab>
+</Tabs>
+
+<CodeGroup tabs="JavaScript,SQL">
+  ```javascript
+  // Example: User segmentation logic
+const segmentUsers = (users) => {
+  return users.map(user => {
+    const segment = user.activityScore > 80 ? 'high' : 
+                    user.activityScore > 50 ? 'medium' : 'low';
+    return { ...user, segment };
+  });
+};
+
+// Apply personalized recommendations
+segmentUsers(userData).forEach(user => {
+  if (user.segment === 'high') {
+    sendRecommendation(user, 'premium_features');
+  }
+});
+  ```
+  ```sql
+  -- Example: Churn analysis query
+  SELECT 
+    user_id,
+    last_login,
+    DATEDIFF(NOW(), last_login) as days_since_login,
+    CASE 
+      WHEN DATEDIFF(NOW(), last_login) > 30 THEN 'at_risk'
+      ELSE 'active'
+    END as churn_status
+  FROM users
+  WHERE last_login IS NOT NULL;
+  ```
+</CodeGroup>
+
+<Callout kind="success">This case demonstrates the power of combining AI with strategic marketing.</Callout>
+
+## Nonprofit Expansion Case Study
+
+A local nonprofit serving underprivileged communities needed to expand their reach. Parker+Olive helped them modernize their operations and implement digital fundraising strategies.
+
+<Steps>
+  <Step title="Assessment" icon="clipboard">
+    Evaluated current systems and identified areas for improvement.
+  </Step>
+  <Step title="Digital Transformation" icon="refresh-cw">
+    Migrated to cloud-based tools and implemented CRM software.
+  </Step>
+  <Step title="Fundraising Campaign" icon="dollar-sign">
+    Launched targeted digital campaigns to increase donations.
+  </Step>
+  <Step title="Training" icon="users">
+    Provided staff training on new systems and processes.
+  </Step>
+</Steps>
+
+<ExpandableGroup>
+  <Expandable title="Key Challenges" default-open="true">
+    The nonprofit lacked modern technology infrastructure and struggled with inconsistent donor communication.
+  </Expandable>
+  <Expandable title="Outcomes" default-open="false">
+    Donations increased by 60%, volunteer engagement rose by 35%, and operational efficiency improved significantly.
+  </Expandable>
+</ExpandableGroup>
+
+## SMB Digital Transformation
+
+A small manufacturing business faced inefficiencies in their supply chain management. Parker+Olive implemented custom software and process optimizations.
+
+```python
+# Example: Inventory optimization script
+import pandas as pd
+
+def optimize_inventory(current_stock, demand_forecast):
+    optimal_levels = {}
+    for item in current_stock:
+        safety_stock = demand_forecast[item] * 0.1
+        reorder_point = demand_forecast[item] * 1.5
+        optimal_levels[item] = max(current_stock[item], reorder_point + safety_stock)
+    return optimal_levels
+
+# Usage
+forecast = {'widget_a': 100, 'widget_b': 50}
+stock = {'widget_a': 75, 'widget_b': 60}
+optimized = optimize_inventory(stock, forecast)
+print(optimized)
+```
+
+<Callout kind="info">Digital transformation requires careful change management to ensure adoption.</Callout>
+
+## E-commerce Optimization
+
+An online retailer struggled with low conversion rates. Parker+Olive redesigned their website and implemented targeted marketing strategies.
+
+<Expandable title="Website Redesign" default-open="true">
+  The new design focused on user experience, mobile responsiveness, and clear call-to-actions. Parker+Olive used A/B testing to optimize layouts and improve conversion funnels.
+</Expandable>
+
+<Tabs>
+  <Tab title="SEO Improvements" icon="search">
+    Enhanced search engine visibility through keyword optimization and technical SEO.
+  </Tab>
+  <Tab title="Email Marketing" icon="mail">
+    Developed automated email sequences for cart abandonment and customer retention.
+  </Tab>
+  <Tab title="Social Media" icon="share-2">
+    Built targeted social media campaigns to drive traffic and engagement.
+  </Tab>
+</Tabs>
+
+These case studies illustrate Parker+Olive's ability to deliver measurable results across diverse industries. Their data-driven approach and technical expertise enable clients to achieve sustainable growth and operational excellence.

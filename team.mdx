@@ -1,0 +1,134 @@
+---
+title: Team
+description: Meet the experts at Parker+Olive
+---
+
+Parker+Olive's team consists of experienced professionals with diverse backgrounds in technology, business, and design. Their collective expertise enables them to provide comprehensive solutions for complex growth challenges.
+
+<Columns cols={3}>
+  <Card title="Founders" icon="users" href="#founders">
+    Experienced entrepreneurs leading the vision.
+  </Card>
+  <Card title="Technical Experts" icon="cpu" href="#technical-experts">
+    AI and software development specialists.
+  </Card>
+  <Card title="Strategy Consultants" icon="lightbulb" href="#strategy-consultants">
+    Business growth and operations experts.
+  </Card>
+</Columns>
+
+## Founders
+
+The founding team brings over 20 years of combined experience in startup growth and technology consulting. Their backgrounds in both technical and business domains allow them to bridge the gap between innovation and practical implementation.
+
+<ExpandableGroup>
+  <Expandable title="Leadership Philosophy" default-open="true">
+    Parker+Olive believes in collaborative partnerships with clients, focusing on sustainable growth rather than quick fixes.
+  </Expandable>
+  <Expandable title="Industry Experience" default-open="false">
+    The founders have worked with companies ranging from early-stage startups to established enterprises across various sectors.
+  </Expandable>
+</ExpandableGroup>
+
+## Technical Experts
+
+The technical team specializes in AI, machine learning, and full-stack development. They stay current with emerging technologies to deliver cutting-edge solutions.
+
+<Tabs>
+  <Tab title="AI Specialists" icon="brain">
+    Experts in machine learning, natural language processing, and computer vision.
+
+    <CodeGroup tabs="Python,TensorFlow">
+      ```python
+      import tensorflow as tf
+from tensorflow import keras
+
+# Simple neural network example
+model = keras.Sequential([
+    keras.layers.Dense(64, activation='relu', input_shape=(10,)),
+    keras.layers.Dense(32, activation='relu'),
+    keras.layers.Dense(1, activation='sigmoid')
+])
+
+model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+      ```
+      ```python
+      # TensorFlow example for image classification
+import tensorflow as tf
+
+# Load pre-trained model
+model = tf.keras.applications.MobileNetV2(weights='imagenet')
+
+# Preprocess image
+def preprocess_image(image_path):
+    img = tf.keras.preprocessing.image.load_img(image_path, target_size=(224, 224))
+    img_array = tf.keras.preprocessing.image.img_to_array(img)
+    img_array = tf.expand_dims(img_array, 0)
+    return tf.keras.applications.mobilenet_v2.preprocess_input(img_array)
+
+# Classify image
+processed_img = preprocess_image('example.jpg')
+predictions = model.predict(processed_img)
+      ```
+    </CodeGroup>
+  </Tab>
+  <Tab title="Software Developers" icon="code">
+    Full-stack developers proficient in modern frameworks and cloud technologies.
+
+    <Steps>
+      <Step title="Planning" icon="clipboard">
+        Define requirements and architecture.
+      </Step>
+      <Step title="Development" icon="code">
+        Implement features using agile methodologies.
+      </Step>
+      <Step title="Testing" icon="check-circle">
+        Ensure quality through comprehensive testing.
+      </Step>
+      <Step title="Deployment" icon="rocket">
+        Deploy to production with monitoring.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+<Callout kind="info">Continuous learning is a core value, with team members regularly attending conferences and workshops.</Callout>
+
+## Strategy Consultants
+
+Strategy consultants provide business insights and operational guidance. They help clients develop growth plans and implement effective processes.
+
+<Expandable title="Consulting Approach" default-open="true">
+  Parker+Olive uses a data-driven approach to consulting, combining industry benchmarks with client-specific analysis to develop tailored strategies.
+</Expandable>
+
+```javascript
+// Example: Growth strategy calculation
+const calculateGrowthStrategy = (currentMetrics, targets) => {
+  const strategies = [];
+  
+  if (currentMetrics.revenue < targets.revenue * 0.8) {
+    strategies.push('revenue_optimization');
+  }
+  
+  if (currentMetrics.customerAcquisitionCost > targets.cac * 1.2) {
+    strategies.push('acquisition_efficiency');
+  }
+  
+  if (currentMetrics.churnRate > 0.05) {
+    strategies.push('retention_improvement');
+  }
+  
+  return strategies;
+};
+
+// Usage
+const metrics = { revenue: 500000, customerAcquisitionCost: 150, churnRate: 0.08 };
+const targets = { revenue: 750000, cac: 120 };
+const recommendedStrategies = calculateGrowthStrategy(metrics, targets);
+console.log('Recommended strategies:', recommendedStrategies);
+```
+
+<Callout kind="success">The team's diverse expertise enables holistic solutions that address both technical and business challenges.</Callout>
+
+Parker+Olive's collaborative culture fosters innovation and ensures that clients receive comprehensive support throughout their growth journey. The team's commitment to excellence and continuous improvement drives successful outcomes for every project.
